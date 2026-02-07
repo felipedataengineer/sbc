@@ -1,0 +1,52 @@
+<mxfile host="65bd71144e">
+    <diagram id="Le8JOiyuJTS8AVP0auQe" name="Page-1">
+        <mxGraphModel dx="1538" dy="801" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="jogos" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="98" y="40" width="47" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space-collapse: preserve;&quot;&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;id jogo, &#39;data&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;&#39;scb_gols&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;&#39;adv_gols&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;&#39;adv_nome&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;color: rgb(206, 145, 120);&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="101" y="91" width="534" height="31" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;span style=&quot;font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;joga&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="147" y="260" width="18" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Id_jogador" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="178" width="75" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Nome" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="161" y="178" width="50" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;p style=&quot;white-space: pre-wrap;&quot; dir=&quot;auto&quot;&gt;&lt;strong style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;bela Desempenho&lt;/strong&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt; (por jogador por jogo)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;white-space: pre-wrap;&quot; dir=&quot;auto&quot;&gt;CREATE TABLE desempenho (&lt;br&gt;id_desempenho INT PRIMARY KEY,&lt;br&gt;id_jogador INT REFERENCES jogadores(id_jogador),&lt;br&gt;id_jogo INT REFERENCES jogos(id_jogo),&lt;br&gt;gols INT DEFAULT 0,&lt;br&gt;assistencias INT DEFAULT 0,&lt;br&gt;presenca BOOLEAN DEFAULT TRUE&lt;br&gt;);&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="438" y="383" width="305" height="178" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Jogadores" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="147" width="74" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Desempenho" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="51" y="262" width="89" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;span style=&quot;color: rgb(63, 63, 63); white-space: pre-wrap;&quot;&gt;id_desempenho&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="47" y="304" width="103" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;span style=&quot;color: rgb(63, 63, 63); white-space: pre-wrap;&quot;&gt;id_jogador&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="51" y="332" width="74" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="id jogo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="54" y="361" width="53" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Gols" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="51" y="383" width="43" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Assistencias" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="53" y="415" width="85" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Presença" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="56" y="447" width="69" height="26" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
